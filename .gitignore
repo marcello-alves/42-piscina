@@ -1,0 +1,20 @@
+# Compilados
+*.o
+*.out
+a.out
+
+# Sistema operacional
+.DS_Store
+.Trash-*
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# Arquivos de teste temporários
+main_test.c
+*_test.c
+test/

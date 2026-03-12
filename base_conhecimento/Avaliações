@@ -1,0 +1,52 @@
+Introduction
+Por favor, siga as seguintes regras durante o processo de avaliação:
+
+- Mantenha-se sempre educado, cortês, respeitoso e construtivo.
+O bem-estar da comunidade depende disso.
+
+- Trabalhe com a pessoa (ou grupo) avaliada para identificar quaisquer problemas
+potenciais em seu trabalho.
+Dedique tempo para discutir e debater os problemas que você encontrou.
+
+- Tenha em mente que seus colegas podem ter interpretado as instruções
+e o escopo do projeto de forma diferente.
+Mantenha a mente aberta e avalie-os da forma mais honesta possível.
+
+- O valor educacional deste processo depende inteiramente de avaliações
+de pares sérias e justas.
+
+Guidelines
+- Avalie apenas o trabalho que está no repositório Git do estudante ou grupo.
+
+- Verifique duas vezes se o repositório Git pertence ao estudante ou grupo.
+Certifique-se de que o trabalho é para o projeto correspondente e verifique se "git clone"
+é usado em uma pasta vazia.
+
+- Verifique cuidadosamente se nenhum alias malicioso foi usado para enganá-lo
+a avaliar algo diferente do conteúdo do repositório oficial.
+
+- Para evitar surpresas, tanto o estudante avaliador quanto o avaliado devem
+revisar quaisquer scripts usados para facilitar a avaliação.
+
+- Se o estudante avaliador ainda não concluiu o projeto, ele deve
+ler todo o subject antes de iniciar a defesa.
+
+- Use as flags disponíveis na escala para sinalizar problemas
+como repositório vazio, programa não funcional, erros de norma ou trapaça.
+Nestes casos, a avaliação termina imediatamente, e a nota final
+é 0 (-42 em caso de trapaça).
+
+- No entanto, exceto em casos de trapaça, você é encorajado a discutir
+o trabalho, mesmo que incompleto, para ajudar a identificar problemas e evitar
+repetir erros.
+
+- Durante a defesa, não são permitidas falhas de segmentação (segfaults),
+travamentos inesperados ou encerramentos descontrolados.
+Se algum ocorrer, a nota final é 0, e você deve usar a bandeira apropriada.
+
+- Você nunca deve editar nenhum arquivo, exceto um arquivo de configuração (se existir).
+Se for necessário editar um arquivo, discuta os motivos com o estudante
+avaliado e certifique-se de que ambos concordem antes de prosseguir.
+
+- Verifique se apenas os arquivos solicitados estão presentes no repositório Git.
+Se arquivos adicionais forem encontrados, a avaliação para imediatamente.

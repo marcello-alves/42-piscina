@@ -6,7 +6,7 @@
 /*   By: maalzir- <maalzir-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/12 21:06:30 by maalzir-          #+#    #+#             */
-/*   Updated: 2026/03/14 21:14:17 by maalzir-         ###   ########.fr       */
+/*   Updated: 2026/03/14 21:51:23 by maalzir-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ void	ft_print_1(char a, char b)
 	
 	if (!(a == '9' && b == '8'))
 	{
-		ft_putchar(',');
 		ft_putchar(' ');
 	}
 }
@@ -37,7 +36,6 @@ void	ft_print_2(char	c, char	d)
 	if (!(c == '9' && d == '9'))
 	{
 		ft_putchar(',');
-		ft_putchar(' ');
 	}
 }
 

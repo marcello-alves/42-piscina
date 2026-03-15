@@ -6,53 +6,49 @@
 /*   By: maalzir- <maalzir-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/12 21:06:30 by maalzir-          #+#    #+#             */
-/*   Updated: 2026/03/14 21:51:23 by maalzir-         ###   ########.fr       */
+/*   Updated: 2026/03/15 19:14:58 by maalzir-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_print_nb(int n)
 {
-	write(1, &c, 1);
-}
+	char	d;
 
-void	ft_print_1(char a, char b)
-{
-	ft_putchar(a);
-	ft_putchar(b);
-	
-	if (!(a == '9' && b == '8'))
-	{
-		ft_putchar(' ');
-	}
-}
-
-void	ft_print_2(char	c, char	d)
-{
-	ft_putchar(c);
-	ft_putchar(d);
-
-	if (!(c == '9' && d == '9'))
-	{
-		ft_putchar(',');
-	}
+	d = '0' + n / 10;
+	write(1, &d, 1);
+	d = '0' + n % 10;
+	write(1, &d, 1);
 }
 
 void	ft_print_comb2(void)
 {
-	char	a;
-	char	b;
+	int		a;
+	int		b;
 	char	c;
-	char	d;
 
-	d = '0';
-	while (d <= '9')
+	a = 0;
+	b = a + 1;
+	while (a <= 98)
 	{
-		while (c <= '9')
+		while (b <= 99)
 		{
-			
+			ft_print_nb(a);
+			c = ' ';
+			write(1, &c, 1);
+			ft_print_nb(b);
+			if (!(a == 98 && b == 99))
+			{
+				c = ',';
+				write(1, &c, 1);
+				c = ' ';
+				write(1, &c, 1);
+			}
+			b++;
 		}
+	a++;
+	b = a + 1;
 	}
 }
 

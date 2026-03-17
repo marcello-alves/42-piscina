@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maalzir- <maalzir-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/16 14:20:39 by maalzir-          #+#    #+#             */
-/*   Updated: 2026/03/17 15:13:41 by maalzir-         ###   ########.fr       */
+/*   Created: 2026/03/17 15:16:44 by maalzir-          #+#    #+#             */
+/*   Updated: 2026/03/17 17:45:44 by maalzir-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+void	ft_swap(int	*a, int	*b)
 {
-	*nbr = 42;
+	int		tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
-// //DESCOMENTE ABAIXO (SELECIONE E USE O 'CTRL + /') PARA TESTAR O PROGRAMA
+
 // #include <stdio.h>
-// int		main()
+// int main()
 // {
-// 	int	n;
-// 	ft_ft(&n);
-// 	printf("%d\n", n);
-// 	return (0);
+// 	int a = 2;
+// 	int b = 5;
+
+// 	ft_swap(&a, &b);
+// 	printf("a = %d\nb = %d\n", a, b);
 // }

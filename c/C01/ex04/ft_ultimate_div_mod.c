@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maalzir- <maalzir-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/16 14:20:39 by maalzir-          #+#    #+#             */
-/*   Updated: 2026/03/17 15:13:41 by maalzir-         ###   ########.fr       */
+/*   Created: 2026/03/17 18:04:47 by maalzir-          #+#    #+#             */
+/*   Updated: 2026/03/17 18:40:11 by maalzir-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+void	ft_ultimate_div_mod(int	*a, int	*b)
 {
-	*nbr = 42;
+	int	tmp;
+
+	tmp = *a;
+	*b = *a % *b;
+	*a = *a / *b;
+	*a = tmp;
 }
-// //DESCOMENTE ABAIXO (SELECIONE E USE O 'CTRL + /') PARA TESTAR O PROGRAMA
-// #include <stdio.h>
-// int		main()
-// {
-// 	int	n;
-// 	ft_ft(&n);
-// 	printf("%d\n", n);
-// 	return (0);
-// }
+
+#include <stdio.h>
+int main()
+{
+	int x = 20;
+	int y = 12;
+	
+	ft_ultimate_div_mod(&x, &y);
+	printf("%d\n %d\n", x, y);
+}

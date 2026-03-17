@@ -18,3 +18,4 @@ Thumbs.db
 main_test.c
 *_test.c
 test/
+*.save

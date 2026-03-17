@@ -6,9 +6,17 @@
 /*   By: maalzir- <maalzir-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 14:20:39 by maalzir-          #+#    #+#             */
-/*   Updated: 2026/03/16 18:23:46 by maalzir-         ###   ########.fr       */
+/*   Updated: 2026/03/16 22:25:33 by maalzir-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr);
+void	ft_ft(int *nbr)
+{
+	*nbr = 42;
+}
 
+int		main(&nbr)
+{
+	ft_ft();
+	return (0);
+}

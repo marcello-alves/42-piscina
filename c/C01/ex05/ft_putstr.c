@@ -1,30 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maalzir- <maalzir-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/17 18:04:47 by maalzir-          #+#    #+#             */
-/*   Updated: 2026/03/17 21:48:00 by maalzir-         ###   ########.fr       */
+/*   Created: 2026/03/17 20:49:28 by maalzir-          #+#    #+#             */
+/*   Updated: 2026/03/17 22:03:09 by maalzir-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mod(int	*a, int	*b)
-{
-	int	tmp;
+#include <unistd.h>
 
-	tmp = *a;
-	*a = tmp / *b;
-	*b = tmp % *b;
+void	ft_putstr(char	*str)
+{
+	int		i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write(1, &str[i], 1);
+		i++;
+	}
 }
 
-// //DESCOMENTE ABAIXO (SELECIONE E USE O 'CTRL + /') PARA TESTAR O PROGRAMA
-// #include <stdio.h>
-// int main()
+//DESCOMENTE ABAIXO (SELECIONE E USE O 'CTRL + /') PARA TESTAR O PROGRAMA
+// int	main(void)
 // {
-// 	int x = 300;
-// 	int y = 20;
-// 	ft_ultimate_div_mod(&x, &y);
-// 	printf("Divisao: %d\nResto: %d\n", x, y);
+// 	ft_putstr("miranha");
+// 	write(1, "\n", 1);
+
+// 	ft_putstr("a");
+// 	write(1, "\n", 1);
+
+// 	ft_putstr("");
+// 	write(1, "(string vazia)\n", 15);
 // }

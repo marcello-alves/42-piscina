@@ -1,34 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maalzir- <maalzir-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/18 16:44:36 by maalzir-          #+#    #+#             */
-/*   Updated: 2026/03/19 17:12:40 by maalzir-         ###   ########.fr       */
+/*   Created: 2026/03/19 18:00:03 by maalzir-          #+#    #+#             */
+/*   Updated: 2026/03/19 18:01:03 by maalzir-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char	*dest, char	*src)
-{
-	int	i;
-
-	i = 0;
-	while (src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
-}
-//REMOVE THE COMMENTS FROM THE LINES BELOW TO TEST THE PROGRAM
-// #include <stdio.h>
-// int main()
-// {
-// 	char src[] = "Hello";
-// 	char dest[0];
-// 	ft_strcpy(dest, src);
-// 	printf("%s\n", dest);
-// }

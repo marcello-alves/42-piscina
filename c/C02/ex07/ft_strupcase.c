@@ -1,38 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maalzir- <maalzir-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/19 18:00:03 by maalzir-          #+#    #+#             */
-/*   Updated: 2026/03/19 20:33:05 by maalzir-         ###   ########.fr       */
+/*   Created: 2026/03/19 22:34:11 by maalzir-          #+#    #+#             */
+/*   Updated: 2026/03/19 22:40:34 by maalzir-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char	*str)
+char	*ft_strupcase(char	*str)
 {
 	int	i;
 
 	i = 0;
-	if (str[0] == '\0')
-		return (1);
 	while (str[i])
 	{
-		if (!(str[i] >= 'A' && str[i] <= 'Z')
-			&& !(str[i] >= 'a' && str[i] <= 'z'))
-			return (0);
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= 32;
 		i++;
 	}
-	return (1);
+	return (str);
 }
-// //REMOVE THE COMMENTS FROM THE LINES BELOW TO TEST THE PROGRAM
+
+//REMOVE THE COMMENTS FROM THE LINES BELOW TO TEST THE PROGRAM
 // #include <stdio.h>
-// int main()
+// char *ft_strupcase(char *str);
+// int	main(void)
 // {
-// 	printf("%d\n", ft_str_is_alpha("miranha"));
-// 	printf("%d\n", ft_str_is_alpha("miranha2"));
-// 	printf("%d\n", ft_str_is_alpha("12345"));
-// 	printf("%d\n", ft_str_is_alpha("MIRANHA"));
-// 	printf("%d\n", ft_str_is_alpha(""));
+// 	char str[] = "Martelo123!";
+// 	printf("%s\n", ft_strupcase(str));
 // }

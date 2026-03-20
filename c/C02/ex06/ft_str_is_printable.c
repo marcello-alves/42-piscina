@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maalzir- <maalzir-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/19 18:00:03 by maalzir-          #+#    #+#             */
-/*   Updated: 2026/03/19 20:33:05 by maalzir-         ###   ########.fr       */
+/*   Created: 2026/03/19 22:27:26 by maalzir-          #+#    #+#             */
+/*   Updated: 2026/03/19 22:30:32 by maalzir-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char	*str)
+int	ft_str_is_printable(char	*str)
 {
 	int	i;
 
 	i = 0;
-	if (str[0] == '\0')
-		return (1);
 	while (str[i])
 	{
-		if (!(str[i] >= 'A' && str[i] <= 'Z')
-			&& !(str[i] >= 'a' && str[i] <= 'z'))
+		if (!(str[i] >= 32 && str[i] <= 126))
 			return (0);
 		i++;
 	}
 	return (1);
 }
-// //REMOVE THE COMMENTS FROM THE LINES BELOW TO TEST THE PROGRAM
+
+//REMOVE THE COMMENTS FROM THE LINES BELOW TO TEST THE PROGRAM
 // #include <stdio.h>
-// int main()
+// int main ()
 // {
-// 	printf("%d\n", ft_str_is_alpha("miranha"));
-// 	printf("%d\n", ft_str_is_alpha("miranha2"));
-// 	printf("%d\n", ft_str_is_alpha("12345"));
-// 	printf("%d\n", ft_str_is_alpha("MIRANHA"));
-// 	printf("%d\n", ft_str_is_alpha(""));
+// 	printf("%d\n", ft_str_is_printable("\n"));
+// 	printf("%d\n", ft_str_is_printable("\t"));
+// 	printf("%d\n", ft_str_is_printable("maRTelo"));
+// 	printf("%d\n", ft_str_is_printable(""));
 // }
